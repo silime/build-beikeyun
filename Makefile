@@ -81,7 +81,7 @@ libreelec:
 libreelec_clean:
 endif
 
-ifeq ($(build_lakka),y)
+ifeq ($(build_lakka),n)
 LAKKA_URL := http://le.builds.lakka.tv/Rockchip.ROCK64.arm
 LAKKA_PKG := $(shell basename "`hxwls "$(LAKKA_URL)/?C=M&O=D" |grep 'img.gz$$' |head -1`")
 LAKKA_IDB := loader/armbian-5.75/idbloader.bin
@@ -112,7 +112,7 @@ lakka:
 lakka_clean:
 endif
 
-ifeq ($(build_alpine),y)
+ifeq ($(build_alpine),n)
 ALPINE_BRANCH := v3.10
 ALPINE_VERSION := 3.10.0
 ALPINE_PKG := alpine-minirootfs-$(ALPINE_VERSION)-aarch64.tar.gz
@@ -141,7 +141,7 @@ alpine:
 alpine_clean:
 endif
 
-ifeq ($(build_archlinux),y)
+ifeq ($(build_archlinux),n)
 ARCHLINUX_PKG := ArchLinuxARM-aarch64-latest.tar.gz
 
 ifneq ($(TRAVIS),)
