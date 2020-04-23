@@ -19,10 +19,10 @@ build: $(TARGETS)
 clean: $(TARGETS:%=%_clean)
 	rm -f $(OUTPUT)/*.img $(OUTPUT)/*.xz
 
-ARMBIAN_PKG_UBUNTU := Armbian_5.90_Rock64_Ubuntu_bionic_default_4.4.182.7z
-ARMBIAN_PKG_DEBIAN := Armbian_5.91_Rock64_Debian_buster_default_4.4.184.7z
-ARMBIAN_PKG_DEBIAN_STRETCH := Armbian_5.90_Rock64_Debian_stretch_default_4.4.182.7z
-
+ARMBIAN_PKG_UBUNTU := Armbian_20.02.1_Rock64_bionic_current_5.4.20_desktop.7z
+ARMBIAN_PKG_DEBIAN := Armbian_20.02.1_Rock64_buster_current_5.4.20.7z
+ARMBIAN_PKG_DEBIAN_STRETCH := Armbian_20.02.1_Rock64_buster_legacy_4.4.213.7z
+                              
 ifneq ($(TRAVIS),)
 ARMBIAN_URL_BASE := https://dl.armbian.com/rock64/archive
 else
