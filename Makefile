@@ -52,7 +52,7 @@ armbian:
 armbian_clean:
 endif
 
-ifeq ($(build_libreelec),y)
+ifeq ($(build_libreelec),n)
 #LIBREELEC_URL := http://archive.libreelec.tv
 LIBREELEC_URL := http://www.gtlib.gatech.edu/pub/LibreELEC
 
