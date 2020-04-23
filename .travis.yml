@@ -19,7 +19,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: ${token}
+    secure: ${token1}
     skip_cleanup: true
   overwrite: true
   file_glob: true
