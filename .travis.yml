@@ -18,7 +18,7 @@ script:
 - ls -l output
 deploy:
   provider: releases
-  api_key:"$GIT_TOKEN"
+  api_key:"a73b63c6bf49803463287f9f43c3e88c614ec5f4"
   skip_cleanup: true
   overwrite: true
   file_glob: true
